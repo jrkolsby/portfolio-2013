@@ -2,6 +2,9 @@ body,
 html {
 	height: 100%;
 }
+body {
+	background: #F7F4F2;
+}
 article.full {
 	height: 100%;
 	width: 100%;
@@ -21,7 +24,7 @@ article.full .col .inner .wrap {
 	overflow: auto;
 	width: 100%;
 }
-article.full .col .inner h1 {
+article h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 2em;
@@ -37,7 +40,7 @@ article.full .col .inner h2 {
 	color: #fff;
 	margin-bottom: 24px;
 }
-article.full .col .inner button {
+article button {
 	padding: 10px 20px;
 	display: inline;
 	margin-right: 20px;
@@ -48,8 +51,34 @@ article.full .col .inner button {
 	font-size: 0.8em;
 	color: #fff;
 	background: transparent;
+	-webkit-transition: background .2s ease;
+	transition: background .2s ease;
 	text-transform: uppercase;
-	
+	cursor: pointer;
+}
+article button:hover {
+	background: rgba(255,255,255,0.1);
+	-webkit-transition: background .2s ease;
+	transition: background .2s ease;
+}
+article.half {
+	height: 350px;
+	width: 350px;
+	float: left;
+	background: #fff;
+	margin-bottom: 50px;
+	border-radius: 3px;
+	background-position: center center !important;
+	background-size: cover !important;
+	position: relative;
+}
+article.half:nth-of-type(2n+1) {
+	margin-right: 50px;
+}
+section.halfwrap {
+	width: 750px;
+	margin: 0 auto;
+	padding-top: 50px;
 }
 article#periodic {
 	background: #f56a26;
