@@ -1,0 +1,63 @@
+body,
+html {
+	height: 100%;
+}
+article.full {
+	height: 100%;
+	width: 100%;
+}
+article.full .col {
+	margin: 0 auto;
+	display: table;
+	height: 100%;
+	width: 600px;
+}
+article.full .col .inner {
+	vertical-align: middle;
+	display: table-cell;
+	width: 100%;
+}
+article.full .col .inner .wrap {
+	overflow: auto;
+	width: 100%;
+}
+article.full .col .inner h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 2em;
+	line-height: 130%;
+	color: #fff;
+	margin-bottom: 20px;
+}
+article.full .col .inner h2 {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 166%;
+	color: #fff;
+	margin-bottom: 24px;
+}
+article.full .col .inner button {
+	padding: 10px 20px;
+	display: inline;
+	margin-right: 20px;
+	border-radius: 5px;
+	border: 1.4px solid #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 0.8em;
+	color: #fff;
+	background: transparent;
+	text-transform: uppercase;
+	
+}
+article#periodic {
+	background: #f56a26;
+	background: -moz-linear-gradient(top,  #f56a26 0%, #e53657 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f56a26), color-stop(100%,#e53657));
+	background: -webkit-linear-gradient(top,  #f56a26 0%,#e53657 100%);
+	background: -o-linear-gradient(top,  #f56a26 0%,#e53657 100%);
+	background: -ms-linear-gradient(top,  #f56a26 0%,#e53657 100%);
+	background: linear-gradient(to bottom,  #f56a26 0%,#e53657 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f56a26', endColorstr='#e53657',GradientType=0 );
+}
