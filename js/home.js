@@ -1,17 +1,10 @@
 $(document).ready(function() {
-	$('article.half').mousedown(function(event) {
-		if ($(this).hasClass('active')) {
-		    event.stopPropagation();
-		    console.log('STOP');			
-		}
+	$('#blur').click(function() {
 		$('article.half.active').removeClass('active');
-		$(this).addClass('active');
-		console.log('ACTIVATE');
+		$(this).removeClass('active');
 	});
-	$('html').click(function() {
-		if ($('article.half.active').length > 0) {
-			$('article.half.active').removeClass('active');
-		    console.log('DEACTIVATE');	
-		}
+	$('article.half').click(function() {
+		$(this).addClass('active');
+		$('#blur').addClass('active');
 	});
 });

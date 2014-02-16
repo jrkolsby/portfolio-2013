@@ -5,6 +5,26 @@ html {
 body {
 	background: #F7F4F2;
 }
+#blur {
+	position: fixed;
+	z-index: 3;
+	pointer-events: none;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	opacity: 0;
+	-webkit-transition: opacity .2s ease-in-out;
+	transition: opacity .2s ease-in-out;
+}
+#blur.active {
+	opacity: 0.7;
+	pointer-events: all;
+	-webkit-transition: opacity .2s ease-in-out;
+	transition: opacity .2s ease-in-out;
+}
 article.full {
 	height: 100%;
 	width: 100%;
@@ -105,7 +125,8 @@ article.half div {
 	position: fixed;
 	z-index: 3;
 	margin: auto;
-	top: 0;
+	top: 0px;
+	overflow: hidden;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -117,7 +138,7 @@ article.half div {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	padding: 30px;
-	box-shadow: 0 0 0 3000px rgba(0,0,0,0.7), 0 0 15px rgba(0,0,0,0.5);
+	box-shadow: 0 0 15px rgba(0,0,0,0.5);
 	opacity: 0;
 	pointer-events: none;
 	-webkit-transition: opacity .2s ease-in-out;
