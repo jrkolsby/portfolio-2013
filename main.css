@@ -2,81 +2,8 @@ body,
 html {
 	height: 100%;
 }
-.blur {
-	opacity: 0;
-	-webkit-transition: opacity .3s ease-in-out;
-	transition: opacity .3s ease-in-out;
-}
 body {
 	background: #F7F4F2;
-}
-#post {
-	height: 100%;
-	width: 100%;
-	display: table;
-	text-align: center;
-	vertical-align: middle;
-	position: fixed;
-	z-index: 3;
-	pointer-events: none;
-	top: 0;
-	left: 0;
-	height: 100%;
-	overflow: scroll;
-	width: 100%;
-	background: rgba(255,255,255,0.6);
-	opacity: 0;
-	-webkit-transition: opacity .3s ease-in-out;
-	transition: opacity .3s ease-in-out;
-}
-#post.active {
-	opacity: 1;
-	pointer-events: all;
-}
-#post .inner {
-	text-align: center;
-	display: table-cell;
-	vertical-align: middle;	
-}
-#post .inner h1 {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	line-height: 130%;
-	font-size: 2.4em;
-	width: 600px;
-	margin-bottom: 30px;
-	display: inline-block;
-	vertical-align: middle;
-}
-#post .inner h2 {
-	display: inline-block;
-	vertical-align: middle;
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-	font-weight: 300;
-	line-height: 166%;
-	text-align: left;
-	color: #2f2f2f;
-	width: 500px;
-}
-#post button {
-	padding: 5px 20px;
-	margin-bottom: 40px;
-	display: inline-block;
-	vertical-align: middle;
-	border-radius: 5px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	font-size: 0.9em;
-	background: transparent;
-	-webkit-transition: background .2s ease;
-	transition: background .2s ease;
-	text-transform: uppercase;
-	cursor: pointer;
-	color: #111;
-	border: 2px solid #111;	
-}
-#post button:hover {
-	background: rgba(0,0,0,0.05);	
 }
 article.full {
 	height: 100%;
@@ -152,20 +79,51 @@ section.halfwrap {
 	padding-top: 50px;
 }
 article.half {
+	width: 350px;
+	border-radius: 3px;
+	margin-bottom: 50px;
+	background: #fff;
+}
+article.half:nth-of-type(2n+1) {
+	margin-right: 50px;
+}
+article.half div:first-child {
 	display: table;
 	height: 350px;
 	width: 350px;
-	float: left;
-	background: #fff;
-	margin-bottom: 50px;
-	border-radius: 3px;
 	background-position: center center !important;
 	background-size: cover !important;
 	position: relative;
 	overflow: hidden;
 	cursor: pointer;
+	background: #fff;
+	border-radius: 3px;
+	transition: .3s height ease-in-out;
+	-webkit-transition: .3s height ease-in-out;
 }
-article.half h1 {
+article.half div:first-child::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	border-radius: 2px;
+	opacity: 0;
+	-webkit-transition: opacity .2s ease-in-out;
+	transition: opacity .2s ease-in-out;
+}
+article.half.active div:first-child::after,
+article.half:hover div:first-child::after {
+	opacity: 0.85;
+}
+article.half.active div:first-child,
+article.half.active div:first-child::after {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+article.half div:first-child h1 {
 	width: 100%;
 	padding: 0 7%;
 	display: table-cell;
@@ -179,37 +137,28 @@ article.half h1 {
 	-webkit-transition: opacity .2s ease;
 	transition: opacity .2s ease;
 }
-article.half h2 {
-	display: none;
-}
-article.half:hover h1,
-article.half.active h1 {
+article.half:hover div:first-child h1,
+article.half.active div:first-child h1 {
 	opacity: 1;
 }
-article.half.active {
-	cursor: auto;
+article.half.active div:first-child {
+	height: 160px;
 }
-article.half::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #fff;
-	opacity: 0;
-	-webkit-transition: opacity .2s ease-in-out;
-	transition: opacity .2s ease-in-out;
+article.half div:last-child {
+	display: block;
+	max-height: 0;
+	overflow: hidden;
+	font-size: 0.86em;
+	padding: 0 30px;
+	transition-delay: .3s;
+	-webkit-transition-delay: .3s;
+	transition: .3s max-height ease-in-out, .3s padding ease-in-out;
+	-webkit-transition: .3s max-height ease-in-out, .3s padding ease-in-out;
 }
-article.half.active::after,
-article.half:hover::after {
-	opacity: 0.85;
+article.half.active div:last-child {
+	max-height: 600px;
+	padding: 30px;
 }
-article.half:nth-of-type(2n+1) {
-	margin-right: 50px;
-}
-
-
 
 article#periodic {
 	background: rgb(247,134,93);
