@@ -59,17 +59,19 @@ article button {
 	border-radius: 5px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	font-size: 0.8em;
 	background: transparent;
 	-webkit-transition: background .2s ease;
 	transition: background .2s ease;
 	text-transform: uppercase;
 	cursor: pointer;
 	float: left;
+}
+article.full button {
 	color: #fff;
 	border: 1.4px solid #fff;
+	font-size: 0.8em;	
 }
-article button:hover {
+article.full button:hover {
 	background: rgba(255,255,255,0.1);
 }
 section.halfwrap {
@@ -83,6 +85,7 @@ article.half {
 	border-radius: 3px;
 	margin-bottom: 50px;
 	background: #fff;
+	float: left;
 }
 article.half:nth-of-type(2n+1) {
 	margin-right: 50px;
@@ -100,6 +103,8 @@ article.half div:first-child {
 	border-radius: 3px;
 	transition: .3s height ease-in-out;
 	-webkit-transition: .3s height ease-in-out;
+	transition-delay: .2s;
+	-webkit-transition-delay: .2s;
 }
 article.half div:first-child::after {
 	content: '';
@@ -150,8 +155,6 @@ article.half div:last-child {
 	overflow: hidden;
 	font-size: 0.86em;
 	padding: 0 30px;
-	transition-delay: .3s;
-	-webkit-transition-delay: .3s;
 	transition: .3s max-height ease-in-out, .3s padding ease-in-out;
 	-webkit-transition: .3s max-height ease-in-out, .3s padding ease-in-out;
 }
@@ -159,7 +162,18 @@ article.half.active div:last-child {
 	max-height: 600px;
 	padding: 30px;
 }
-
+article.half h2 {
+	color: #333;
+	margin-bottom: 30px;
+}
+article.half button {
+	color: #111;
+	border: 2px solid #111;
+	font-size: 1em;
+}
+article.half button:hover {
+	background: rgba(0,0,0,0.1);
+}
 article#periodic {
 	background: rgb(247,134,93);
 	background: -moz-linear-gradient(top,  rgba(247,134,93,1) 0%, rgba(248,85,89,1) 74%);

@@ -1,8 +1,6 @@
 $(document).ready(function() {
-	$('#close').click(function() {
-		$('article.half.active').removeClass('active');
+	$('article.half div:first-child').click(function() {
+		$(this).parent().toggleClass('active');
 	});
-	$('article.half').click(function() {
-		$(this).addClass('active');
-	});
+	$('.retina').retinaReplace();
 });

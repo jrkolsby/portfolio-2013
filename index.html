@@ -15,10 +15,15 @@
 	<link 
 	href='http://fonts.googleapis.com/css?family=Montserrat'
 	rel='stylesheet' type='text/css'>
-	<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.js'></script>
+	<script type='text/javascript' src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'></script>
-	<script type='text/javascript' src='js/retina.js'></script>
-	<script type='text/javascript' src='js/home.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('article.half div:first-child').click(function() {
+				$(this).parent().toggleClass('active');
+			});
+		});
+	</script>
 </head>
 <body>
 <div id="post-main">
@@ -27,7 +32,7 @@
 </div>
 	<article class="full" id="periodic">
 		<div class="inner">
-			<object class="graphic" data="graphics/periodic.svg" type="image/svg+xml"><img src="graphics/periodic.png"></object>
+			<img src="graphics/periodic.png" />
 			<br>
 			<div class="desc">
 				<h1 style="margin-bottom:20px">Periodic: Chemical Calculator</h1>
@@ -44,20 +49,37 @@
 			</div>
 			<div>
 			<h2>Going on vacation? Studying for exams? Don't let all of those beautiful, blue links go to waste. Each day, RedditLogger records the seven top links of ten subreddits of your choosing, allowing you access to a Reddit timeline upon your return. Written in PHP, this site essentially connects to the Reddit API, logs links from the subreddits listed in a .txt file, and stores them with MySQL. The logging process occurs each day at 10PM, and is executed by setcronjob.com. The account making process was something.</h2>
+			<button>Github</button><button>Link</button>
+			</div>
+		</article>
+		<article class="half">
+			<div style="background:url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52a795f546637_1.JPG')">
+				<h1>The Lovett Film Festival Logo</h1>
+			</div>
+			<div>
+			<h2>Going on vacation? Studying for exams? Don't let all of those beautiful, blue links go to waste. Each day, RedditLogger records the seven top links of ten subreddits of your choosing, allowing you access to a Reddit timeline upon your return. Written in PHP, this site essentially connects to the Reddit API, logs links from the subreddits listed in a .txt file, and stores them with MySQL. The logging process occurs each day at 10PM, and is executed by setcronjob.com. The account making process was something.</h2>
+			<button>Github</button><button>Link</button>
+			</div>
+		</article>
+		<article class="half">
+			<div style="background:url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52a795f546637_1.JPG')">
+				<h1>The Lovett Film Festival Logo</h1>
+			</div>
+			<div>
+			<h2>Going on vacation? Studying for exams? Don't let all of those beautiful, blue links go to waste. Each day, RedditLogger records the seven top links of ten subreddits of your choosing, allowing you access to a Reddit timeline upon your return. Written in PHP, this site essentially connects to the Reddit API, logs links from the subreddits listed in a .txt file, and stores them with MySQL. The logging process occurs each day at 10PM, and is executed by setcronjob.com. The account making process was something.</h2>
+			<button>Github</button><button>Link</button>
+			</div>
+		</article>
+		<article class="half">
+			<div style="background:url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52a795f546637_1.JPG')">
+				<h1>The Lovett Film Festival Logo</h1>
+			</div>
+			<div>
+			<h2>Going on vacation? Studying for exams? Don't let all of those beautiful, blue links go to waste. Each day, RedditLogger records the seven top links of ten subreddits of your choosing, allowing you access to a Reddit timeline upon your return. Written in PHP, this site essentially connects to the Reddit API, logs links from the subreddits listed in a .txt file, and stores them with MySQL. The logging process occurs each day at 10PM, and is executed by setcronjob.com. The account making process was something.</h2>
+			<button>Github</button><button>Link</button>
 			</div>
 		</article>
 	</section>
-	<article class="full" id="periodic">
-		<div class="inner">
-			<object class="graphic" data="graphics/periodic.svg" type="image/svg+xml"><img src="graphics/periodic.png"></object>
-			<br>
-			<div class="desc">
-				<h1 style="margin-bottom:20px">Periodic: Chemical Calculator</h1>
-				<h2 style="margin-bottom:27px">Atomic mass, polyatomic ions, charge, and percent composition,<br>at your fingertips.</h2>
-				<button>GitHub</button>
-				<button>App Store</button>
-			</div>
-		</div>
-	</article>
+	<script type='text/javascript' src='js/retina.js'></script>
 </body>
 </html>
