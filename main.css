@@ -214,14 +214,14 @@ article.half button:hover {
 	/* ----= Periodic =---- */
 
 article#periodic {
-	background: rgb(247,134,93);
-	background: -moz-linear-gradient(top,  rgba(247,134,93,1) 0%, rgba(248,85,89,1) 74%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,134,93,1)), color-stop(74%,rgba(248,85,89,1)));
-	background: -webkit-linear-gradient(top,  rgba(247,134,93,1) 0%,rgba(248,85,89,1) 74%);
-	background: -o-linear-gradient(top,  rgba(247,134,93,1) 0%,rgba(248,85,89,1) 74%);
-	background: -ms-linear-gradient(top,  rgba(247,134,93,1) 0%,rgba(248,85,89,1) 74%);
-	background: linear-gradient(to bottom,  rgba(247,134,93,1) 0%,rgba(248,85,89,1) 74%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7865d', endColorstr='#f85559',GradientType=0 );
+	background: rgb(253,222,148);
+	background: -moz-linear-gradient(top,  rgba(253,222,148,1) 0%, rgba(250,103,95,1) 71%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(253,222,148,1)), color-stop(71%,rgba(250,103,95,1)));
+	background: -webkit-linear-gradient(top,  rgba(253,222,148,1) 0%,rgba(250,103,95,1) 71%);
+	background: -o-linear-gradient(top,  rgba(253,222,148,1) 0%,rgba(250,103,95,1) 71%);
+	background: -ms-linear-gradient(top,  rgba(253,222,148,1) 0%,rgba(250,103,95,1) 71%);
+	background: linear-gradient(to bottom,  rgba(253,222,148,1) 0%,rgba(250,103,95,1) 71%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdde94', endColorstr='#fa675f',GradientType=0 );
 }
 
 	/* ----= RedditLogger =---- */
