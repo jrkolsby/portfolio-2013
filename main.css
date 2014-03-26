@@ -211,6 +211,44 @@ article.half button:hover {
 	background: rgba(0,0,0,0.1);
 }
 	
+	/* ----= Multiplicity =---- */
+
+article#multiplicity {
+	background: #fff;
+}
+article#multiplicity img {
+	width: 100%;
+	max-width: 700px;
+	display: block;
+	position: absolute;
+	margin: auto;
+	right: 0;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+}
+article#multiplicity .desc {
+	position: relative;
+	z-index: 1;
+}
+article#multiplicity h1 {
+	color: #508BFA;
+	font-size: 4em;
+	text-align: center;
+}
+article#multiplicity h2 {
+	color: #333;
+	font-size: 1.1em;
+	text-align: center;
+}
+article#multiplicity button {
+	color: #111;
+	border: 2px solid #111;
+}
+article#multiplicity button:hover {
+	background: rgba(0,0,0,0.1);
+}
+
 	/* ----= Periodic =---- */
 
 article#periodic {
@@ -322,14 +360,20 @@ article#whether button:hover {
 }
 
 @media (max-width: 660px) {
-	
-	/* Full 660px styles */
-	
+
+		/* ----= Full 660 Styles =---- */
+
+	article#multiplicity h1 {
+		font-size: 2.5em;
+	}
+	article#multiplicity h2 {
+		font-size: 0.8em;
+	}
 	article#periodic .graphic {
 		width: 90%;
 		height: auto;
 	}
-	
+
 	article.half div:first-child {
 		height: 200px;
 	}
