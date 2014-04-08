@@ -19,8 +19,11 @@
 	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('button, .sicon, .project').click(function() {
+			$('.sicon, .project').click(function() {
 				window.open($(this).attr('href'), '_blank');
+			});
+			$('button').click(function() {
+				window.location = $(this).attr('href');
 			});
 		});
 	</script>
