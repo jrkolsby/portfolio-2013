@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta
+	content="James Kolsby - UI designer and software developer for web and iOS from Atlanta, GA"
+	name="description">
+	<meta content=
+	"width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0"
+	name="viewport">
+
+	<title>James Kolsby - Work</title>	
+	<link href="../html5.css" rel="stylesheet" type="text/css">
+	<link href="../main.css" rel="stylesheet" type="text/css">
+	<link 
+	href='http://fonts.googleapis.com/css?family=Montserrat'
+	rel='stylesheet' type='text/css'>
+	<script type='text/javascript' src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('article.half div:first-child').click(function() {
+				$(this).parent().toggleClass('active');
+			});
+			$('button').click(function() {
+				window.open($(this).attr('href'), '_blank');
+			});
+		});
+	</script>
+</head>
+<body>
+<div id="post-main">
+	<div class="inner">
+	</div>
+</div>
+	<article class="full" id="multiplicity">
+		<div class="inner">
+			<img src="../graphics/multiplicity.png" />
+			<div class="desc">
+				<h1 style="margin-bottom:20px">Multiplicity</h1>
+				<h2 style="margin-bottom:27px">The greatest breakthrough in mathematical<br>computation since the abacus, in your browser.</h2>
+				<button href="http://jmkl.co/multiplicity/">WebApp</button>
+				<button href="https://github.com/jrkolsby/Multiplicity">GitHub</button>
+			</div>
+		</div>
+	</article>
+	<article class="full" id="periodic">
+		<div class="inner">
+			<img class="graphic" style="margin-bottom:50px" src="../graphics/periodic.png" />
+			<br>
+			<div class="desc">
+				<h1 style="margin-bottom:20px">Periodic: Chemical Calculator</h1>
+				<h2 style="margin-bottom:27px">Atomic mass, polyatomic ions, charge, and percent composition,<br>all at your fingertips.</h2>
+				<button href="https://itunes.apple.com/us/app/periodic-chemical-calculator/id688041030">App Store</button>
+			</div>
+		</div>
+	</article>
+	<section class="half"><section class="halfwrap">
+		<article class="half">
+			<div style="background:url('../graphics/innovationatlanta.png')">
+				<h1>Innovation Atlanta Website</h1>
+			</div>
+			<div>
+			<h2>Here's the website I built for a consulting enterprise by the name of <b>Innovation Atlanta</b>. Not only the largest but also the most detailed website I have ever built, this project in total took me about a week from start to finish. One thing I had no prior experience with is large amounts of copy to layout on the page. While this may seem to be a fairly trivial obstacle, what made it so difficult is also the reason that the stylesheets for this website were so complex: <b>the page is responsive</b>. This was the first responsive website I had ever built, and the results are as rewarding as they were difficult to achieve.<br><br><i>Please note: the client has yet to transfer their domain, so the website is currently hosted on my server.</i></h2>
+			<button href="http://jmkl.co/innovationatlanta/">Website</button>
+			<button href="https://github.com/jrkolsby/innovationatlanta">Github</button>
+			</div>
+		</article>
+		<article class="half">
+			<div style="background:url('../graphics/aptimer.png')">
+				<h1>AP French Timer</h1>
+			</div>
+			<div>
+			<h2>This is just a simple Javascript timer preset with intervals for the AP French exam. Also worth noting is that the website was styled with CSS <c>@media</c> queries, meaning that it is responsive. One of the first responsive websites I ever made in fact.</h2>
+			<button href="http://jmkl.co/aptimer/">Webapp</button>
+			<button href="https://github.com/jrkolsby/aptimer">GitHub</button>
+			</div>
+		</article>
+		<article class="half">
+			<div style="background:url('../graphics/makersclubvideo.png')">
+				<h1>Makers Club Video</h1>
+			</div>
+			<div>
+			<h2>With the help of <a href="http://colejoh.com">Cole Johnson</a>, I recently filmed and edited the official commencement presentation for the Makers Club. The video was shot with his Cannon 60D mounted on dolly tracks parallel to the desk. Song is the theme to <b>2001: A Space Odyssey</b></h2>
+			<button href="http://youtu.be/awtUx81Rdao">Video</button>
+			</div>
+		</article>
+	</section></section>
+	<article class="full" id="simpleshare">
+		<div class="inner">
+			<div style="margin-right:30px" class="desc">
+				<h1 style="margin-bottom:3px">SimpleShare</h1>
+				<h2 style="margin-bottom:30px">Quick and storage-efficient file sharing</h2>
+				<button href="http://jmkl.co/simpleshare/">Website</button>
+				<button href="https://github.com/jrkolsby/simpleshare">GitHub</button>
+			</div>
+			<img alt="CarComments" class="graphic" src="../graphics/simpleshare.png" />
+		</div>
+	</article>
+	<article class="full" id="redditlogger">
+		<div class="inner">
+			<img alt="RedditLogger: Your Daily Fix" class="graphic" style="margin-bottom:50px;padding-bottom:40px;border-bottom:1px solid #bbb" src="../graphics/redditlogger.png" />
+			<br>
+			<div style="max-width:450px" class="desc">
+				<h2 style="margin-bottom:20px">Going on vacation? Studying for exams? Don't let all of those beautiful blue links go to waste, use RedditLogger!</h2>
+				<button href="http://jmkl.co/redditlogger/">Webapp</button>
+				<button href="https://github.com/jrkolsby/redditlogger">GitHub</button>
+			</div>
+		</div>
+	</article>
+	<section class="half"><section class="halfwrap">
+		<article class="half">
+			<div style="background:url('../graphics/makersclubsite.png')">
+				<h1>Makers Club Website</h1>
+			</div>
+			<div>
+			<h2>This is the website for the Makers Club, which on the surface seems pretty simple, but what's new here is a fully-functioning CMS system that I built underneath it. Essentially a simplified version of <c>PHPMyAdmin</c>, this system gives the ability to create, edit, and delete posts all from a password protected admin panel. While I would like to create a more secure system of verification than <c>Apache</c>'s built in password-protected directories, this will have to do for now.</h2>
+			<button href="http://jmkl.co/makersclub/">Website</button>
+			</div>
+		</article>
+		<article class="half">
+			<div style="background:url('../graphics/lovettfilmfest.png')">
+				<h1>Film Festival Logo</h1>
+			</div>
+			<div>
+			<h2>I worked on this logo for the <a href="http://www.lovett.org/fine-arts/high-school-film-fest/index.aspx">Lovett High School Film Festival</a>. Tried to go for a completely flat design in the beginning, but found that the contrasts and shadows of the final product accented the logo nicely.</h2>
+			<button href="../graphics/lovettfilmfest-large.png">Image</button>
+			</div>
+		</article>
+	</section></section>
+	<article class="full" id="carcomments">
+		<div class="inner">
+			<img alt="CarComments" class="graphic" style="margin-bottom:30px;" src="../graphics/carcomments.png" />
+			<br>
+			<div style="max-width:420px" class="desc">
+				<h2 style="margin-bottom:30px">Point out the ineptitude of drivers from the safety of your own home!</h2>
+				<button href="http://www.jmkl.co/carcomments/">Website</button>
+				<button href="https://github.com/jrkolsby/carcomments">GitHub</button>
+			</div>
+		</div>
+	</article>
+	<article class="full" id="whether">
+		<div class="inner">
+			<img style="margin-bottom:50px" alt="Whether" class="graphic" src="../graphics/whether.png" />
+			<br>
+			<div style="max-width:360px" class="desc">
+				<button href="http://www.jmkl.co/whether/">Webapp</button>
+				<button href="https://github.com/jrkolsby/whether">GitHub</button>
+			</div>
+		</div>
+	</article>
+	<section class="half"><section class="halfwrap">
+		<article class="half">
+			<div style="background:url('../graphics/barbarossavideo.png')">
+				<h1>Barbarossa PVP Video</h1>
+			</div>
+			<div>
+			<h2>This video was made to advertise a Minecraft server I hosted a while back. I filmed individual shots using <a href="http://www.telestream.net/screenflow/overview.htm">TeleStream's ScreenFlow</a>, and the soundtrack is the Shrek Theme.</h2>
+			<button href="https://vimeo.com/54178612">Video</button>
+			</div>
+		</article>
+		<article class="half">
+			<div style="background:url('../graphics/cheerio.png')">
+				<h1>Cheerio</h1>
+			</div>
+			<div>
+			<h2>A box of Cheerios brings an unwanted surprise. This effect was achieved using just two shots, one with the actor and one without, and a well-timed cut. The video was shot on a <b>Nikon D3100</b>, and graded using <b>Apple Color</b>.</h2>
+			<button href="https://vimeo.com/56829096">Video</button>
+			</div>
+		</article>
+		<article class="half">
+			<div style="background:url('../graphics/goingup.png')">
+				<h1>Going Up?</h1>
+			</div>
+			<div>
+			<h2>Shot on a Canon T3i with fluorescent lighting. Some audio issues can be observed between cuts. I believe the problem was a mix up with <c>.wav</c> and <c>.mp3</c> audio formats.</h2>
+			<button href="https://vimeo.com/49113063">Video</button>
+			</div>
+		</article>
+		<article class="half">
+			<div style="background:url('../graphics/themonkey.png')">
+				<h1>The Monkey</h1>
+			</div>
+			<div>
+			<h2>One small wind-up monkey, trapped within the bounds of his tabletop prison, pursues the one thing in which his mind can find solace: women. The video was shot on a Canon 60D with all natural light.</h2>
+			<button href="https://vimeo.com/49554671">Video</button>
+			</div>
+		</article>
+	</section></section>
+	<script type='text/javascript' src='../js/retina.js'></script>
+</body>
+</html>
