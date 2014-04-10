@@ -20,10 +20,14 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('.sicon, .project').click(function() {
-				window.open($(this).attr('href'), '_blank');
+				if ($(this).attr('href').length > 0) {
+					window.open($(this).attr('href'), '_blank');
+				}
 			});
 			$('button').click(function() {
-				window.location = $(this).attr('href');
+				if ($(this).attr('href').length > 0) {
+					window.location = $(this).attr('href');
+				}
 			});
 		});
 	</script>
@@ -46,13 +50,13 @@
 			<h1 id="title">What I'm currently building</h1>
 			<div id="projects">
 				<div id="projects-inner">
-					<div class="project" href="">
-						<div class="icon"></div>
+					<div class="project" href="http://jmkl.co/multiplicity/">
+						<div style="background: url('multiplicity.png') 50% 50% / cover" class="icon"></div>
 						<h1>Multiplicity</h1>
 					</div>
 					<div class="project" href="">
-						<div class="icon"></div>
-						<h1>Periodic</h1>
+						<div style="background: url('geopoole.png') 50% 50% / cover" class="icon"></div>
+						<h1>Geopoole</h1>
 					</div>
 				</div>
 			</div>
