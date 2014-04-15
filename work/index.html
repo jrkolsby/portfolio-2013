@@ -25,10 +25,16 @@
 			$('button').click(function() {
 				window.open($(this).attr('href'), '_blank');
 			});
+			$(window).scroll(function() {
+				if ($(window).scrollTop() > 200) {
+					$('#scroll').removeClass('active');
+				}
+			});
 		});
 	</script>
 </head>
 <body>
+	<div id="scroll" class="active"></div>
 <div id="post-main">
 	<div class="inner">
 	</div>
