@@ -152,8 +152,7 @@ div#projects-inner .project .icon {
 	width: 64px;
 	height: 64px;
 	background: #fff;
-	border-radius: 8px;
-	border: 1px solid #979797;
+	border-radius: 10px;
 }
 div#projects-inner .project h1 {
 	display: inline;
@@ -248,20 +247,21 @@ section#social .sicon:last-child {
 		background-image: url('graphics/logo@2x.png');
 		background-size: 65px 65px;
 	}
-	.sicon {
-		background-size: 40px 40px;
-	}
 	.sicon.gh {
 		background-image: url('icons/github@2x.png');
+		background-size: 40px 40px;
 	}
 	.sicon.d {
 		background-image: url('icons/dribbble@2x.png');
+		background-size: 40px 40px;
 	}
 	.sicon.as {
 		background-image: url('icons/appstore@2x.png');
+		background-size: 40px 40px;
 	}
 	.sicon.li {
 		background-image: url('icons/linkedin@2x.png');
+		background-size: 40px 40px;
 	}
 
 }
