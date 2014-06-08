@@ -640,7 +640,9 @@ article#whether button:hover {
 @media (max-width: 450px) {
 
 	/* ----= Home Page =---- */
-	
+	section#head {
+		padding: 30px 0;
+	}
 	section#head #logo {
 		display: none;
 	}
