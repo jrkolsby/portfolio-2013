@@ -242,7 +242,10 @@ section#social .sicon:last-child {
 
 /* ----= Retina Styles =---- */
 
-@media all and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) {
+	body {
+		display: none;
+	}
 	section#head #logo {
 		background-image: url('graphics/logo@2x.png');
 		background-size: 65px 65px;
