@@ -22,9 +22,6 @@
 			$('article.half div:first-child').click(function() {
 				$(this).parent().toggleClass('active');
 			});
-			$('button').click(function() {
-				window.open($(this).attr('href'), '_blank');
-			});
 			$(window).scroll(function() {
 				if ($(window).scrollTop() > 200) {
 					$('#scroll').removeClass('active');
@@ -39,14 +36,25 @@
 	<div class="inner">
 	</div>
 </div>
+	<section class="half"><section class="halfwrap">
+		<article class="half">
+			<div style="background:url('../graphics/resume.png')">
+				<h1>Formal Resume</h1>
+			</div>
+			<div>
+			<h2>I was encouraged to make a resume to aid the college applications process. If an applications officer doesn't want to come to my website, perhaps I can force it upon them, and it's easier to do so with sheets of paper than with hyperlinks.</h2>
+			<a class="button" href="http://jmkl.co/resume.pdf">PDF</a>
+			</div>
+		</article>
+	</section></section>
 	<article class="full" id="multiplicity">
 		<div class="inner">
 			<img src="../graphics/multiplicity.png" />
 			<div class="desc">
 				<h1 style="margin-bottom:20px">Multiplicity</h1>
 				<h2 style="margin-bottom:27px">The greatest breakthrough in mathematical<br>computation since the abacus, in your browser.</h2>
-				<button href="http://jmkl.co/multiplicity/">WebApp</button>
-				<button href="https://github.com/jrkolsby/Multiplicity">GitHub</button>
+				<a class="button" href="http://jmkl.co/multiplicity/">WebApp</a>
+				<a class="button" href="https://github.com/jrkolsby/Multiplicity">GitHub</a>
 			</div>
 		</div>
 	</article>
@@ -57,7 +65,7 @@
 			<div class="desc">
 				<h1 style="margin-bottom:20px">Periodic: Chemical Calculator</h1>
 				<h2 style="margin-bottom:27px">Atomic mass, polyatomic ions, charge, and percent composition,<br>all at your fingertips.</h2>
-				<button href="https://itunes.apple.com/us/app/periodic-chemical-calculator/id688041030">App Store</button>
+				<a class="button" href="https://itunes.apple.com/us/app/periodic-chemical-calculator/id688041030">App Store</a>
 			</div>
 		</div>
 	</article>
@@ -68,8 +76,8 @@
 			</div>
 			<div>
 			<h2>Here's the website I built for a consulting enterprise by the name of <b>Innovation Atlanta</b>. Not only the largest but also the most detailed website I have ever built, this project in total took me about a week from start to finish. One thing I had no prior experience with is large amounts of copy to layout on the page. While this may seem to be a fairly trivial obstacle, what made it so difficult is also the reason that the stylesheets for this website were so complex: <b>the page is responsive</b>. This was the first responsive website I had ever built, and the results are as rewarding as they were difficult to achieve.<br><br><i>Please note: the client has yet to transfer their domain, so the website is currently hosted on my server.</i></h2>
-			<button href="http://innovation-atlanta.com/">Website</button>
-			<button href="https://github.com/jrkolsby/innovationatlanta">Github</button>
+			<a class="button" href="http://innovation-atlanta.com/">Website</a>
+			<a class="button" href="https://github.com/jrkolsby/innovationatlanta">Github</a>
 			</div>
 		</article>
 		<article class="half">
@@ -78,8 +86,8 @@
 			</div>
 			<div>
 			<h2>This is just a simple Javascript timer preset with intervals for the AP French exam. Also worth noting is that the website was styled with CSS <c>@media</c> queries, meaning that it is responsive. One of the first responsive websites I ever made in fact.</h2>
-			<button href="http://jmkl.co/aptimer/">Webapp</button>
-			<button href="https://github.com/jrkolsby/aptimer">GitHub</button>
+			<a class="button" href="http://jmkl.co/aptimer/">Webapp</a>
+			<a class="button" href="https://github.com/jrkolsby/aptimer">GitHub</a>
 			</div>
 		</article>
 		<article class="half">
@@ -88,16 +96,7 @@
 			</div>
 			<div>
 			<h2>I made this video to introduce the theme of my school's prom, The Great Gatsby. <i>Original, right?</i>. It was filmed using both a Canon 60D and T3i, edited in Final Cut 7, and colored in <b>Apple Color</b>. A lot of the footage turned out underexposed for which Color was unable to compensate. The scene is very noisy at some points.</h2>
-			<button href="https://vimeo.com/87994299">Vimeo</button>
-			</div>
-		</article>
-		<article class="half">
-			<div style="background:url('../graphics/resume.png')">
-				<h1>Formal Resume</h1>
-			</div>
-			<div>
-			<h2>I was encouraged to make a resume to aid the college applications process. If an applications officer doesn't want to come to my website, perhaps I can force it upon them, and it's easier to do so with sheets of paper than with hyperlinks.</h2>
-			<button href="http://jmkl.co/resume.pdf">PDF</button>
+			<a class="button" href="https://vimeo.com/87994299">Vimeo</a>
 			</div>
 		</article>
 	</section></section>
@@ -106,8 +105,8 @@
 			<div style="margin-right:30px" class="desc">
 				<h1 style="margin-bottom:3px">SimpleShare</h1>
 				<h2 style="margin-bottom:30px">Quick and storage-efficient file sharing</h2>
-				<button href="http://jmkl.co/simpleshare/">Website</button>
-				<button href="https://github.com/jrkolsby/simpleshare">GitHub</button>
+				<a class="button" href="http://jmkl.co/simpleshare/">Website</a>
+				<a class="button" href="https://github.com/jrkolsby/simpleshare">GitHub</a>
 			</div>
 			<img alt="CarComments" class="graphic" src="../graphics/simpleshare.png" />
 		</div>
@@ -118,8 +117,8 @@
 			<br>
 			<div style="max-width:450px" class="desc">
 				<h2 style="margin-bottom:20px">Going on vacation? Studying for exams? Don't let all of those beautiful blue links go to waste, use RedditLogger!</h2>
-				<button href="redditlogger.com">Webapp</button>
-				<button href="https://github.com/jrkolsby/redditlogger">GitHub</button>
+				<a class="button" href="http://redditlogger.com">Webapp</a>
+				<a class="button" href="https://github.com/jrkolsby/redditlogger">GitHub</a>
 			</div>
 		</div>
 	</article>
@@ -130,7 +129,7 @@
 			</div>
 			<div>
 			<h2>With the help of <a href="http://colejoh.com">Cole Johnson</a>, I recently filmed and edited the official commencement presentation for the Makers Club. The video was shot with his Cannon 60D mounted on dolly tracks parallel to the desk. Song is the theme to <b>2001: A Space Odyssey</b></h2>
-			<button href="http://youtu.be/awtUx81Rdao">Video</button>
+			<a class="button" href="http://youtu.be/awtUx81Rdao">Video</a>
 			</div>
 		</article>
 		<article class="half">
@@ -139,7 +138,7 @@
 			</div>
 			<div>
 			<h2>I worked on this logo for the <a href="http://www.lovett.org/fine-arts/high-school-film-fest/index.aspx">Lovett High School Film Festival</a>. Tried to go for a completely flat design in the beginning, but found that the contrasts and shadows of the final product accented the logo nicely.</h2>
-			<button href="../graphics/lovettfilmfest-large.png">Image</button>
+			<a class="button" href="../graphics/lovettfilmfest-large.png">Image</a>
 			</div>
 		</article>
 	</section></section>
@@ -149,8 +148,8 @@
 			<br>
 			<div style="max-width:420px" class="desc">
 				<h2 style="margin-bottom:30px">Point out the ineptitude of drivers from the safety of your own home!</h2>
-				<button href="http://www.jmkl.co/carcomments/">Website</button>
-				<button href="https://github.com/jrkolsby/carcomments">GitHub</button>
+				<a class="button" href="http://www.jmkl.co/carcomments/">Website</a>
+				<a class="button" href="https://github.com/jrkolsby/carcomments">GitHub</a>
 			</div>
 		</div>
 	</article>
@@ -161,7 +160,7 @@
 			</div>
 			<div>
 			<h2>This video was made to advertise a Minecraft server I hosted a while back. I filmed individual shots using <a href="http://www.telestream.net/screenflow/overview.htm">TeleStream's ScreenFlow</a>, and the soundtrack is the Shrek Theme.</h2>
-			<button href="https://vimeo.com/54178612">Video</button>
+			<a class="button" href="https://vimeo.com/54178612">Video</a>
 			</div>
 		</article>
 		<article class="half">
@@ -170,7 +169,7 @@
 			</div>
 			<div>
 			<h2>A box of Cheerios brings an unwanted surprise. This effect was achieved using just two shots, one with the actor and one without, and a well-timed cut. The video was shot on a <b>Nikon D3100</b>, and graded using <b>Apple Color</b>.</h2>
-			<button href="https://vimeo.com/56829096">Video</button>
+			<a class="button" href="https://vimeo.com/56829096">Video</a>
 			</div>
 		</article>
 		<article class="half">
@@ -179,7 +178,7 @@
 			</div>
 			<div>
 			<h2>Shot on a Canon T3i with fluorescent lighting. Some audio issues can be observed between cuts. I believe the problem was a mix up with <c>.wav</c> and <c>.mp3</c> audio formats.</h2>
-			<button href="https://vimeo.com/49113063">Video</button>
+			<a class="button" href="https://vimeo.com/49113063">Video</a>
 			</div>
 		</article>
 		<article class="half">
@@ -188,7 +187,7 @@
 			</div>
 			<div>
 			<h2>One small wind-up monkey, trapped within the bounds of his tabletop prison, pursues the one thing in which his mind can find solace: women. The video was shot on a Canon 60D with all natural light.</h2>
-			<button href="https://vimeo.com/49554671">Video</button>
+			<a class="button" href="https://vimeo.com/49554671">Video</a>
 			</div>
 		</article>
 	</section></section>

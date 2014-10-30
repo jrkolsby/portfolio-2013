@@ -5,6 +5,14 @@ html {
 body {
 	background: #1B1A17;
 }
+a.button {
+	font-weight: 400 !important;
+	text-decoration: none;
+	padding: 14px 20px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
 
 /* ----= Home Page =---- */
 
@@ -88,15 +96,14 @@ section#intro #body a {
 section#intro #body a:hover {
 	color: #76abe9;
 }
-section#intro #body button {
+section#intro #body a.button {
 	color: #111;
-	border: 2px solid #111;
-	padding: 14px 20px;
+	border: 1.4px solid #111;
 	font-size: 0.8em;
 	transition: .2s background ease-in-out;
 	-webkit-transition: .2s background ease-in-out;
 }
-section#intro #body button:hover {
+section#intro #body a.button:hover {
 	background: rgba(0,0,0,0.1);
 }
 div#main {
@@ -190,7 +197,7 @@ div#info-container #body h2 {
 	color: #fff;
 	line-height: 160%;
 }
-div#info-container #body button {
+div#info-container #body a.button {
 	background: #FE5E61;
 	border: none;
 	font-size: 0.8em;
@@ -200,7 +207,7 @@ div#info-container #body button {
 	-webkit-transition: .2s background ease-in-out;
 	color: #fff;
 }
-div#info-container #body button:hover {
+div#info-container #body a.button:hover {
 	background: #fe8082;
 }
 section#social {
@@ -313,7 +320,6 @@ article.full {
 	vertical-align: middle;
 	transition: box-shadow .2s ease;
 	-webkit-transition: box-shadow .2s ease;
-	line-height: 0;
 	border-bottom: 1px solid #fff;
 }
 article.full.shadow {
@@ -356,8 +362,8 @@ article.full h2 {
 	color: #fff;
 	font-size: 1em;
 }
-article button,
-div#main-container button {
+article a.button,
+div#main-container a.button {
 	padding: 10px 20px;
 	display: inline;
 	margin-right: 20px;
@@ -371,15 +377,15 @@ div#main-container button {
 	cursor: pointer;
 	float: left;
 }
-article button:last-child {
+article a.button:last-child {
 	margin-right: 0;
 }
-article.full button {
+article.full a.button {
 	color: #fff;
 	border: 1.4px solid #fff;
 	font-size: 0.8em;	
 }
-article.full button:hover {
+article.full a.button:hover {
 	background: rgba(255,255,255,0.1);
 }
 section.half {
@@ -507,12 +513,12 @@ article.half c {
 article.half h2 a:hover {
 	color: #7ec9fa;
 }
-article.half button {
+article.half a.button {
 	color: #111;
 	border: 2px solid #111;
 	font-size: 0.9em;
 }
-article.half button:hover {
+article.half a.button:hover {
 	background: rgba(0,0,0,0.1);
 }
 	
@@ -546,11 +552,11 @@ article#multiplicity h2 {
 	font-size: 1.1em;
 	text-align: center;
 }
-article#multiplicity button {
+article#multiplicity a.button {
 	color: #111;
-	border: 2px solid #111;
+	border: 1.4px solid #111;
 }
-article#multiplicity button:hover {
+article#multiplicity a.button:hover {
 	background: rgba(0,0,0,0.1);
 }
 
@@ -578,11 +584,11 @@ article#redditlogger h1 {
 article#redditlogger h2 {
 	color: #8A8986;
 }
-article#redditlogger button {
+article#redditlogger a.button {
 	color: #1BA3DD;
-	border: 2px solid #1BA3DD;
+	border: 1.4px solid #1BA3DD;
 }
-article#redditlogger button:hover {
+article#redditlogger a.button:hover {
 	background: rgba(27,163,221,0.08);
 }
 
@@ -614,30 +620,6 @@ article#simpleshare {
 
 article#simpleshare .desc {
 	padding: 0;
-}
-
-	/* ----= Whether =---- */
-	
-article#whether {
-	background: rgb(43,43,43);
-	background: -moz-radial-gradient(center, ellipse cover,  rgba(43,43,43,1) 0%, rgba(26,26,26,1) 100%);
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(43,43,43,1)), color-stop(100%,rgba(26,26,26,1)));
-	background: -webkit-radial-gradient(center, ellipse cover,  rgba(43,43,43,1) 0%,rgba(26,26,26,1) 100%);
-	background: -o-radial-gradient(center, ellipse cover,  rgba(43,43,43,1) 0%,rgba(26,26,26,1) 100%);
-	background: -ms-radial-gradient(center, ellipse cover,  rgba(43,43,43,1) 0%,rgba(26,26,26,1) 100%);
-	background: radial-gradient(ellipse at center,  rgba(43,43,43,1) 0%,rgba(26,26,26,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#1a1a1a',GradientType=1 );
-}
-
-article#whether button {
-	background: #F35F4C;
-	border: none;
-	color: #fff;
-	box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
-}
-
-article#whether button:hover {
-	background: #fb715f;
 }
 
 @media (max-width: 450px) {
