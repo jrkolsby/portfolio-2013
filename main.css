@@ -98,7 +98,7 @@ section#intro #body a:hover {
 }
 section#intro #body a.button {
 	color: #111;
-	border: 1.4px solid #111;
+	border: 2px solid #111;
 	font-size: 0.8em;
 	transition: .2s background ease-in-out;
 	-webkit-transition: .2s background ease-in-out;
@@ -149,6 +149,7 @@ div#projects-inner .project {
 	display: inline-block;
 	vertical-align: middle;
 	margin-bottom: 20px;
+	text-decoration: none;
 }
 div#projects-inner .project:last-child {
 	margin-bottom: 0;
