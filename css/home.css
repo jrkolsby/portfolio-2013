@@ -79,7 +79,7 @@ section#intro #body a:hover {
 }
 section#intro #body a.button {
 	color: #111;
-	border: 2px solid #111;
+	border: 1.5px solid #111;
 	border-radius: 8px;
 	font-size: 0.8em;
 	transition: .2s background ease-in-out;
