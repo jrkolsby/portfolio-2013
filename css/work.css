@@ -114,7 +114,7 @@ section.half {
 	overflow: auto;
 	background: #F7F4F2;
 }
-section.halfwrap {
+div.halfwrap {
 	width: 750px;
 	margin: 0 auto;
 	padding-top: 50px;
@@ -246,7 +246,7 @@ article.half a.button:hover {
 	/* ----= Multiplicity =---- */
 
 article#multiplicity {
-	background: #fff;
+	background: #fff url('../graphics/multiplicity.png') center no-repeat;
 }
 article#multiplicity img {
 	width: 100%;
@@ -503,7 +503,7 @@ article#simpleshare .desc {
 	}
 }
 @media (max-width: 800px) {
-	section.halfwrap {
+	div.halfwrap {
 		width: 90%;
 	}
 	article.half {
